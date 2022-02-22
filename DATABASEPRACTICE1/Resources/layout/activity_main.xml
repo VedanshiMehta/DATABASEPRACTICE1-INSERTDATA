@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#f0f8ff">
+
+        <EditText
+            android:layout_width="274.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/addtaskedt"
+            android:hint="Task"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_marginRight="4dp" 
+            android:backgroundTint="@color/my_blue"
+            android:textColor="#000000"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="ADD"
+            android:id="@+id/addB"
+            android:backgroundTint="@color/my_blue"/>
+        
+      
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:id="@+id/dataView"/>
+
+</LinearLayout>
